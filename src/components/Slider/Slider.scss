@@ -14,7 +14,9 @@ $red: #e43737;
     position: relative;
     overflow: hidden;
     background: $light-blue;
-    scroll-behavior:smooth;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
     button{
         width: 140px;
@@ -63,7 +65,7 @@ $red: #e43737;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        transition: 1s ease-out all;
         .slider{
             width: 100vw;
             min-width: 100vw;
