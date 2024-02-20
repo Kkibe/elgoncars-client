@@ -8,7 +8,13 @@ export default function Home() {
   return (
     <div className='Home'>
       <Slider />
-      <Product />
+      <div className="post-container">
+        {
+          Data.map(item => {
+            return <Product item={item} />
+          })
+        }
+      </div>
       <Featured />
       <Newsletter />
     </div>
