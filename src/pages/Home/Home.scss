@@ -7,4 +7,16 @@
     justify-content: center;
     position: relative;
     padding-top: 5px;
+
+    .post-container{
+        display: flex;
+        flex: 5;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
 }
