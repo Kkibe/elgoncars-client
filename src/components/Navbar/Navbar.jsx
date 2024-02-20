@@ -15,7 +15,7 @@ const Navbar = () => {
                     <img src={Logo}/>
             </NavLink> 
             <div className='navlinks'>
-                <NavLink to="/" className='link' title='home' style={handleChange}>Home</NavLink>
+                <NavLink to="/" className='link active' title='home' style={handleChange}>Home</NavLink>
                 <NavLink to="/deals" className='link' title='explore' style={handleChange}>Deals</NavLink>
                 <NavLink to="/blogs" className='link' title='posts' style={handleChange}>Blogs</NavLink>
                 <NavLink to="/contact" className='link' title='contact' style={handleChange}>Contact Us</NavLink>
