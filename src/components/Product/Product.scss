@@ -5,18 +5,7 @@ $blue: #2196f3;
 $dark-blue: #1253a0;
 $red: #e43737;
 
-.products{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 5px;
-
-
-    }
-    
-    .card{
+.product{
         width: calc((100% - 200px)  / 3);
         min-width: 280px;
         background: $lite;
@@ -35,6 +24,20 @@ $red: #e43737;
             &{
                 width: 90%;
             }
+        }
+
+        .liked-btn{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            color: $red;
+        }
+
+        .like-btn{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            color: $blue;
         }
         
         button{
@@ -132,7 +135,4 @@ $red: #e43737;
                 }
             }
         }
-    
     }
-
-
