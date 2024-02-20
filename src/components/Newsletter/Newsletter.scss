@@ -17,7 +17,6 @@ $red: #e43737;
     justify-content: space-evenly;
     margin: 5px 0px;
     padding: 5px;
-    background: $light-blue;
 
     h1{
         font-size: 20px;
@@ -43,6 +42,7 @@ $red: #e43737;
             color: $dark;
             flex: 7;
             border: none;
+            background-color: $light-blue;
         }
         
         button{
