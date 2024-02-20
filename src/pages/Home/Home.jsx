@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Newsletter from '../../components/Newsletter/Newsletter';
 import Featured from '../../components/Featured/Featured';
 import Slider from '../../components/Slider/Slider';
 import Product from '../../components/Product/Product';
+import Loader from '../../components/Loader/Loader';
 import './Home.scss';
 
 import TTA from '../../assets/TTA.png';
@@ -104,15 +105,24 @@ const Data = [
             },
         ]
 export default function Home() {
+    const [data, setData] = useState(null);
+    const [fetching, setFetching] = useState(false);
+  
+    useEffect(() => {
+        setData(Data);
+    }, [])
   return (
     <div className='Home'>
       <Slider />
       <div className="post-container">
         {
-          Data.map(item => {
+          data && data.map(item => {
             return <Product item={item} />
           })
         }
+        {
+            fetching && <><Loader /> <Loader /></>
+          }
       </div>
       <Featured />
       <Newsletter />
