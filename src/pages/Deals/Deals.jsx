@@ -1,15 +1,13 @@
 import React from 'react';
 import Product from '../../components/Product/Product';
 import './Deals.scss';
-import DealsSidebar from '../../components/DealsSidebar/DealsSidebar';
-
-
 import TTA from '../../assets/TTA.png';
 import TY from "../../assets/TY.png";
 import Lc300 from "../../assets/lc300.png";
-
 import ToyotaLC from "../../assets/ToyotaLC.jpg";
 import FR12v from '../../assets/FR12v.jpg';
+import { NavLink } from 'react-router-dom';
+
 
 const Data = [
             {
@@ -22,7 +20,7 @@ const Data = [
                 feature: [
                     'Diesel',
                     '3346 cc',
-                    '304 bhp & 700 Nm'
+                    '304 bhp & 700 Nm',
                 ],
                 liked: false,
             },
@@ -103,10 +101,16 @@ const Data = [
             },
         ]
 export default function Deals() {
-  const value = 3;
+    const tags = ["all", "trending", "latest", "designer", "saved", "sports car", "trucks", "crossover"]
   return (
     <div className='Deals'>
-      <DealsSidebar/>
+      <div className="tags">
+        {
+            tags.map(tag => {
+                return <NavLink to={`/deals/?category=${tag}`} className="tag" >{tag}</NavLink>
+            })
+        }
+      </div>
       <div className="post-container">
         {
           Data.map(item => {

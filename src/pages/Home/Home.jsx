@@ -114,6 +114,7 @@ export default function Home() {
   return (
     <div className='Home'>
       <Slider />
+      <Featured />
       <div className="post-container">
         {
           data && data.map(item => {
@@ -124,7 +125,6 @@ export default function Home() {
             fetching && <><Loader /> <Loader /></>
           }
       </div>
-      <Featured />
       <Newsletter />
     </div>
   )

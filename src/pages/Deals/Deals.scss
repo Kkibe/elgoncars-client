@@ -1,11 +1,48 @@
+$lite:  #FFF;
+$dark: #3b3b3b;
+$light-blue: #ebf4fc;
+$blue: #2196f3;
+$dark-blue: #1253a0;
+$red: #e43737;
+
 .Deals{
     display: flex;
     width: 100%;
     overflow: hidden;
     align-items: start;
     justify-content: space-between;
+    flex-direction: column;
     position: relative;
     padding-top: 5px;
+
+    .tags{
+        width: 100%;
+        flex: 1;
+        height: max-content;
+        display: flex;
+        overflow-y: scroll;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin: 10px 10px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: $light-blue;
+            color: $dark-blue;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 5px;
+            padding: 8px 8px;
+            border-radius: 20px;
+            &:hover, &.active{
+                background: $light-blue;
+                background-color: $blue;
+                color: $light-blue;
+            }
+        }
+    }
     
     .post-container{
         display: flex;

@@ -22,7 +22,7 @@ const Footer = () => {
                     <div className='items-container theme'>
                         <a href='/' title='home'>Home</a>
                         <a href='/deals' title='services'>Cars</a>
-                        <a href='/blogs' title='blogs'>Blogs</a>
+                        <a href='/blogs' title='blogs'>Toyota Kenya</a>
                         <a href='/contact' title='help'>Contact Us</a>
                     </div>
                 </section>
@@ -31,8 +31,9 @@ const Footer = () => {
                     <h2>Featured</h2>
                     <div className='items-container theme'>
                         <a href='#' title='help'>Mazda</a>
-                        <a href='#' title='services'>Toyota</a>
-                        <a href='#' title='store'>Peugeot</a>
+                        <a href='#' title='services'>Super Cars</a>
+                        <a href='#' title='store'>Lamborghini Urus</a>
+                        <a href='#' title='store'>Ford Raptor F250</a>
                     </div>
                 </section>
             </div>

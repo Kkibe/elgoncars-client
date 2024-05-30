@@ -13,6 +13,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import RegisterCar from './pages/RegisterCar/RegisterCar';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='deals' element={<Deals />} />
           <Route path='blogs' element={<Blogs />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='register-car' element={<RegisterCar />} />
       </Routes>
       <Footer />
     </div>

@@ -7,13 +7,16 @@ $red: #e43737;
 
 .product{
         width: calc((100% - 200px)  / 3);
-        min-width: 280px;
+        min-width: 290px;
         background: $lite;
-        margin: 10px 15px 10px;
-        border-radius: 15px;
-        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 10px 10px;
         box-shadow: 0px 5px 8px -3px $blue;
         position: relative;
+
+        font: 18px 'Courier New', Courier, monospace;
+
         @media screen and (max-width: 693px){
             &{
                 width: 70%;
@@ -38,6 +41,10 @@ $red: #e43737;
             top: 5px;
             left: 5px;
             color: $blue;
+            
+            &:hover{
+                color: $red;
+            }
         }
         
         button{
@@ -49,6 +56,7 @@ $red: #e43737;
             color: $lite;
             background: $dark-blue;
             cursor: pointer;
+            border-radius: 20px;
             &:hover{
                 color: $dark-blue;
                 background: $lite;
@@ -57,6 +65,8 @@ $red: #e43737;
                 color: $dark-blue;
                 background: $light-blue;
                 cursor: default;
+                border: none;
+                background: none;
             }
         }
         
@@ -83,11 +93,9 @@ $red: #e43737;
             
             h1{
                 font-size: 18px;
-                font-weight: 700;
                 text-transform: uppercase;
                 width: 100%;
                 text-align: start;
-                margin: 3px;
                 color: $dark;
             }
             
@@ -98,6 +106,17 @@ $red: #e43737;
                 font-size: 15px;
                 overflow: hidden;
                 color: $dark;
+                ul{
+                    width: 100%;
+                    list-style: square;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    li{
+                        list-style-position: inside;
+                    }
+                }
             }
         }
 
@@ -122,17 +141,32 @@ $red: #e43737;
                 font-size: 14px;
                 font-weight: 300;
                 padding: 5px;
-                border: 1px solid $dark-blue;
-
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
                 &:last-of-type{
                     background-color: $light-blue;
+                    border: 1px solid $dark-blue;
+                    color: $dark-blue;
                     position: absolute;
                     top: 5px;
-                    color: $dark-blue;
                     padding: 5px 20px;
                     right: 5px;
-                    border-radius: 10px 0px 10px 0px;
+                    border-radius: 20px 0px 20px 0px;
                 }
+                
+                &:first-of-type{
+                    border-radius: 20px;
+                    font-size: 18px;
+                }
+
+                .rate{
+                    height: inherit;
+                    margin-left: 5px;
+                    color: #FFBD59;
+                }
+            
             }
         }
     }

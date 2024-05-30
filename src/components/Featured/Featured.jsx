@@ -11,6 +11,7 @@ import './Featured.scss';
 const Featured = () => {
     return (
     <section className="featured">
+        <h1>Explore Brands</h1>
         <div className="wrapper">
             <div className="item">
                 <h1 ><img src={Rolls} /></h1>
