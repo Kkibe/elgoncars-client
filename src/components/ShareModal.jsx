@@ -1,5 +1,6 @@
 import { CloseOutlined, CopyAll, CopyAllOutlined, Facebook, FacebookOutlined, Instagram, LinkOutlined, Telegram, Twitter, WhatsApp } from '@mui/icons-material';
 import React from 'react';
+import './ShareModal.scss';
 
 export default function ShareModal() {
   return (
